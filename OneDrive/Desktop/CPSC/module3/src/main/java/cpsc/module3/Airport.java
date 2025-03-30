@@ -74,7 +74,11 @@ public class Airport {
                     String gpsCode = values[8];
                     String iataCode = values[9];
                     String localCode = values[10];
-                    String coordinates = values[11];
+                    String lon = values[11].trim();
+                    String lat = values[12].trim();
+                    String coordinates = lon + "," + lat;
+
+
 
                     airports.add(new Airport(ident, type, name, elevationFt, continent, isoCountry,
                             isoRegion, municipality, gpsCode, iataCode, localCode, coordinates));

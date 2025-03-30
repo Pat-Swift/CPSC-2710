@@ -82,7 +82,12 @@ public class AirportController {
             String lat = coords[1].trim();
             String lon = coords[0].trim();
             String url = "https://www.windy.com/?" + lat + "," + lon + ",12";
+
             mapView.getEngine().load(url);
+
+
+
+
         }
     }
 }
