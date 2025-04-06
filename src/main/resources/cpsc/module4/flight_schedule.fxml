@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="677.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cpsc.module4.controller.FlightScheduleController">
+
+    <top>
+        <HBox alignment="CENTER" prefHeight="62.0" prefWidth="887.0">
+            <children>
+                <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Flight Schedule Application" />
+            </children>
+        </HBox>
+    </top>
+
+    <center>
+        <TableView fx:id="flightTableView">
+            <columns>
+                <TableColumn fx:id="flightDesignatorColumn" prefWidth="124.0" text="Flight Designator" />
+                <TableColumn fx:id="departureAirportColumn" prefWidth="127.0" text="Departure Airport" />
+                <TableColumn fx:id="arrivalAirportColumn" prefWidth="110.0" text="Arrival Airport" />
+                <TableColumn fx:id="daysOfWeekColumn" minWidth="20.0" prefWidth="116.0" text="Days of Week" />
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <VBox spacing="10.0">
+            <padding>
+                <Insets bottom="10" left="10" right="10" top="10" />
+            </padding>
+
+            <GridPane hgap="10" vgap="10">
+                <columnConstraints>
+                    <ColumnConstraints halignment="RIGHT" minWidth="120" />
+                    <ColumnConstraints halignment="LEFT" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints valignment="CENTER" />
+                    <RowConstraints valignment="CENTER" />
+                    <RowConstraints valignment="CENTER" />
+                    <RowConstraints valignment="CENTER" />
+                </rowConstraints>
+
+                <Label prefHeight="25.0" prefWidth="157.0" text="Flight Designator:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+                <TextField fx:id="flightDesignatorField" prefHeight="25.0" prefWidth="519.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                <Label prefHeight="25.0" prefWidth="160.0" text="Departure Airport:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+                <TextField fx:id="departureAirportField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <Label prefHeight="25.0" prefWidth="156.0" text="Arrival Airport:" GridPane.columnIndex="0" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+                <TextField fx:id="arrivalAirportField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <Label prefHeight="25.0" prefWidth="158.0" text="Days of Week:" GridPane.columnIndex="0" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+                <HBox spacing="6" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <children>
+                        <ToggleButton fx:id="mondayToggle" text="Monday">
+                     <font>
+                        <Font size="16.0" />
+                     </font></ToggleButton>
+                        <ToggleButton fx:id="tuesdayToggle" text="Tuesday">
+                     <font>
+                        <Font size="16.0" />
+                     </font></ToggleButton>
+                        <ToggleButton fx:id="wednesdayToggle" text="Wednesday">
+                     <font>
+                        <Font size="16.0" />
+                     </font></ToggleButton>
+                        <ToggleButton fx:id="thursdayToggle" text="Thursday">
+                     <font>
+                        <Font size="16.0" />
+                     </font></ToggleButton>
+                        <ToggleButton fx:id="fridayToggle" text="Friday">
+                     <font>
+                        <Font size="16.0" />
+                     </font></ToggleButton>
+                        <ToggleButton fx:id="saturdayToggle" text="Saturday">
+                     <font>
+                        <Font size="16.0" />
+                     </font></ToggleButton>
+                        <ToggleButton fx:id="sundayToggle" text="Sunday">
+                     <font>
+                        <Font size="16.0" />
+                     </font></ToggleButton>
+                    </children>
+                </HBox>
+            </GridPane>
+
+            <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="962.0" spacing="10">
+                <Button fx:id="addUpdateButton" prefHeight="35.0" prefWidth="75.0" text="Add">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets top="10.0" />
+               </opaqueInsets></Button>
+                <Button fx:id="newButton" layoutX="5.0" prefHeight="35.0" prefWidth="74.0" text="New">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+                <Button fx:id="deleteButton" prefHeight="35.0" prefWidth="90.0" text="Delete">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            </HBox>
+        </VBox>
+    </bottom>
+</BorderPane>
