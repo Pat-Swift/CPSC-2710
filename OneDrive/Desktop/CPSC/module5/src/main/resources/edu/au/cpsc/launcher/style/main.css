@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "LauncherFont";
+    src: url("fonts/moviestar.ttf");
+}
+
+#airportsBtn {
+    -fx-font-family: "LauncherFont";
+    -fx-font-size: 22px;
+    -fx-text-fill: red; /* for visibility */
+}
+
+
+
+/* Style all 4 launcher buttons */
+#airportsBtn,
+#seatReservationsBtn,
+#flightScheduleBtn,
+#aircraftBtn {
+    -fx-font-family: "LauncherFont";
+    -fx-font-size: 14px;
+    -fx-opacity: 0.9;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+    -fx-padding: 10;
+    -fx-min-width: 120px;
+    -fx-min-height: 80px;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, #888, 5, 0.2, 0, 1);
+    -fx-cursor: hand;
+}
+
+#airportsBtn {
+    -fx-text-fill: black;
+}
+
+
+/* Hover effect */
+#airportsBtn:hover,
+#seatReservationsBtn:hover,
+#flightScheduleBtn:hover,
+#aircraftBtn:hover {
+    -fx-opacity: 1.0;
+    -fx-background-color: #eeeeee;
+}
