@@ -1,12 +1,11 @@
 @font-face {
-    font-family: "LauncherFont";
-    src: url("fonts/moviestar.ttf");
+    font-family: 'MovieStar';
+    src: url('fonts/moviestar.ttf');
 }
 
-#airportsBtn {
-    -fx-font-family: "LauncherFont";
-    -fx-font-size: 22px;
-    -fx-text-fill: red; /* for visibility */
+#launcher-root .button {
+    -fx-font-family: 'MovieStar';
+    -fx-font-size: 18px;
 }
 
 
