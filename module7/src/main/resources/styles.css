@@ -1,0 +1,41 @@
+/* General background */
+.root {
+    -fx-background-color: #e8f0e8; /* light greenish for outdoors feel */
+}
+
+/* Main title labels */
+.label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2f4f2f; /* dark forest green */
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #4caf50; /* medium green */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12;
+    -fx-padding: 8 16 8 16;
+}
+
+/* Button hover effect */
+.button:hover {
+    -fx-background-color: #66bb6a; /* lighter green on hover */
+}
+
+/* ListViews */
+.list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #a5d6a7; /* soft green border */
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 5;
+}
+
+/* Selected item in list */
+.list-cell:filled:selected, .list-cell:filled:selected:hover {
+    -fx-background-color: #81c784; /* soft green highlight */
+    -fx-text-fill: white;
+}
