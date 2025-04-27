@@ -2,7 +2,7 @@
 
 This is a JavaFX desktop application that helps you manage camping inventory checklists across multiple categories. I chose this for the project as I have a camping trip next weekend with my dog.
 Since there are several different groupings of inventory needed, I thought it would nicely fill the project requirements to break the inventory checklist into three separate categories, one for 
-packing of camping needs, one for food / water, and one for my dog (Oscar). The program gives you to add or remove items from the checklist as needed.
+packing of camping needs, one for food / water, and one for my dog. The program gives you the option to add or remove items from the checklist as needed.
 
 ---
 
@@ -31,11 +31,11 @@ packing of camping needs, one for food / water, and one for my dog (Oscar). The 
 
 | Class | Description |
 
-| `ChecklistItem` | Represents a single checklist item with properties (e.g., name, packed status). |
-| `ChecklistViewController` | Manages the checklist window UI. Handles loading items from CSV, moving between "Need to Pack" and "Packed" lists. |
-| `MainApplication` | Main JavaFX Application class. Loads the Main Menu, applies CSS styles, and shows the launcher window. |
-| `MainMenuController` | Controls the Main Menu screen: opens checklist windows on button click, sets up keyboard shortcuts. |
-| `module-info.java` | Java module declaration file listing JavaFX modules used by the project. |
+* | `ChecklistItem` | Represents a single checklist item with properties (e.g., name, packed status). |
+* | `ChecklistViewController` | Manages the checklist window UI. Handles loading items from CSV, moving between "Need to Pack" and "Packed" lists. |
+* | `MainApplication` | Main JavaFX Application class. Loads the Main Menu, applies CSS styles, and shows the launcher window. |
+* | `MainMenuController` | Controls the Main Menu screen: opens checklist windows on button click, sets up keyboard shortcuts. |
+* | `module-info.java` | Java module declaration file listing JavaFX modules used by the project. |
 
 ---
 
@@ -59,6 +59,10 @@ packing of camping needs, one for food / water, and one for my dog (Oscar). The 
 
 ### Packing List
 ![packing_list](https://github.com/user-attachments/assets/cb296621-678b-45f3-96bc-25cbd67d90bc)
+
+### Oscar
+![Oscar](https://github.com/user-attachments/assets/3e736e1d-bc8f-4607-b013-e6360491d239)
+
 
 
 ---
